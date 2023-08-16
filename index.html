@@ -2,6 +2,23 @@
 
 <html lang="en">
     <head>
+        <style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
     
     <link href="stylles.css" rel="stylesheet">
     <title>
@@ -21,25 +38,25 @@
             //
             let body = document.querySelector('body');
             document.querySelector('#red').addEventListener('click', function() {
-            body.style.backgroundColor = 'red';
+                body.style.backgroundColor = 'red';
             });
             document.querySelector('#green').addEventListener('click', function() {
-            body.style.backgroundColor = 'green';
+                body.style.backgroundColor = 'green';
             });
             document.querySelector('#blue').addEventListener('click', function() {
-            body.style.backgroundColor = 'blue';
+                body.style.backgroundColor = 'blue';
             });
             document.querySelector('#black').addEventListener('click', function() {
             body.style.backgroundColor = 'black';
             });
             document.querySelector('#magenta').addEventListener('click', function() {
-            body.style.backgroundColor = 'magenta';
+                body.style.backgroundColor = 'magenta';
             });
             document.querySelector('#cyan').addEventListener('click', function() {
-            body.style.backgroundColor = 'cyan';
+                body.style.backgroundColor = 'cyan';
             });
             document.querySelector('#yellow').addEventListener('click', function() {
-            body.style.backgroundColor = 'yellow';
+                body.style.backgroundColor = 'yellow';
             });
             
             document.querySelector('#yellow').addEventListener('click', function() {
